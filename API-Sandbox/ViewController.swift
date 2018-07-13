@@ -72,7 +72,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func viewOniTunesPressed(_ sender: AnyObject) {
-        UIApplication.shared.openURL(URL(string: movies[index].URLString)!)
+        UIApplication.shared.openURL(URL(string: movies[index].link)!)
         
     }
   

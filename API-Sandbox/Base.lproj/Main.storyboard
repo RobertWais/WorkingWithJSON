@@ -26,7 +26,7 @@
                                 <rect key="frame" x="40" y="120" width="303" height="370"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rights Owner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmT-q5-Xb5">
-                                        <rect key="frame" x="99" y="0.0" width="105" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="n6b-2w-raZ"/>
                                         </constraints>
@@ -35,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIc-qC-hJx">
-                                        <rect key="frame" x="99" y="30" width="105" height="20"/>
+                                        <rect key="frame" x="0.0" y="30" width="303" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="zUq-Wa-IOJ"/>
                                         </constraints>
@@ -53,7 +53,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NG-Ze-OgS">
-                                        <rect key="frame" x="99" y="90" width="105" height="20"/>
+                                        <rect key="frame" x="100" y="90" width="103" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="Xb8-pz-K1x"/>
                                         </constraints>
@@ -71,12 +71,11 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="YIc-qC-hJx" firstAttribute="height" secondItem="KmT-q5-Xb5" secondAttribute="height" id="2zg-Yl-MZI"/>
                                     <constraint firstItem="E5c-Mt-Pyf" firstAttribute="top" secondItem="2NG-Ze-OgS" secondAttribute="bottom" constant="10" id="89n-j8-qdO"/>
-                                    <constraint firstItem="KZ8-j6-gmu" firstAttribute="height" secondItem="KmT-q5-Xb5" secondAttribute="height" id="IR6-KJ-PyP"/>
-                                    <constraint firstAttribute="trailing" secondItem="KmT-q5-Xb5" secondAttribute="trailing" constant="99" id="gSd-Aw-j0F"/>
-                                    <constraint firstItem="KmT-q5-Xb5" firstAttribute="leading" secondItem="2NG-Ze-OgS" secondAttribute="leading" id="kJb-yw-0nX"/>
-                                    <constraint firstItem="YIc-qC-hJx" firstAttribute="trailing" secondItem="2NG-Ze-OgS" secondAttribute="trailing" id="oCD-dm-NTt"/>
+                                    <constraint firstAttribute="trailing" secondItem="YIc-qC-hJx" secondAttribute="trailing" id="AZB-7a-H4A"/>
+                                    <constraint firstItem="KmT-q5-Xb5" firstAttribute="leading" secondItem="Lg8-f5-yNi" secondAttribute="leading" id="KTD-gs-pLD"/>
+                                    <constraint firstAttribute="trailing" secondItem="KmT-q5-Xb5" secondAttribute="trailing" id="fbZ-br-JSk"/>
+                                    <constraint firstItem="YIc-qC-hJx" firstAttribute="leading" secondItem="Lg8-f5-yNi" secondAttribute="leading" id="or8-FX-Hal"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EO2-D8-YNF">
