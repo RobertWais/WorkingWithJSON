@@ -27,6 +27,19 @@ internal func exerciseOne() {
     // Alright, now we have a JSON object from SwiftyJSON containing the user data!
     // Let's save the user's first name to a constant!
     let firstName = userData["results"][0]["name"]["first"].stringValue
+    let lastName = userData["results"][0]["name"]["first"].stringValue
+    let streetName = userData["results"][0]["location"]["street"].stringValue
+    let city = userData["results"][0]["location"]["city"].stringValue
+    let state = userData["results"][0]["location"]["state"].stringValue
+    let postCode =  userData["results"][0]["location"]["city"].intValue
+    
+       
+//Could also do it like this******************************
+//    let results = userData["results"]
+//    let firstRandomUser = results[0]
+//    let nameDictionary = firstRandomUser["name"]
+//    let firstName = nameDictionary["first"].stringValue
+//********************************************************
     // Do you see what we did there? We navigated down the JSON heirarchy, asked for "results",
     // then the first dictionary value of that array, then the dictionary stored in "name",
     // then the value stored in "first". We  then told it that we wanted the value as a string.
@@ -68,7 +81,7 @@ internal func exerciseTwo() {
     
     // Uncomment this print statement when you are ready to check your code!
     
-//    print("The top movie is \(topMovie.name) by \(topMovie.rightsOwner). It costs $\(topMovie.price) and was released on \(topMovie.releaseDate). You can view it on iTunes here: \(topMovie.link)")
+   print("The top movie is \(topMovie.name) by \(topMovie.rightsOwner). It costs $\(topMovie.price) and was released on \(topMovie.releaseDate). You can view it on iTunes here: \(topMovie.link)")
 }
 
 internal func exerciseThree() {
@@ -94,7 +107,9 @@ internal func exerciseThree() {
      
      */
     var allMovies: [Movie] = []
-    
+    for index in 0..<allMoviesData.count {
+        allMovies.append(Movie(json: allMoviesData[index]))
+    }
     
     
     
@@ -105,10 +120,21 @@ internal func exerciseThree() {
      contains the `String` "Disney". Iterate over all the values in `allMovies` to check!
      
      */
-//    print("The following movies are Disney movies:")
     
+    //Top movies
+ print("The following movies are Disney movies:")
+    for index in 0..<allMovies.count {
+        print("\(index). \(allMovies[index].name)")
+    }
     
+    //All Disney movies
     
+    for index in 0..<allMovies.count {
+        if allMovies[index].rightsOwner.contains("Disney"){
+            print("\(index+1). \(allMovies[index].name)")
+        }
+        
+    }
     
     /*
      
